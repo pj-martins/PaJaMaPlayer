@@ -20,7 +20,22 @@ namespace PaJaMaPlayer.Droid
 		public MediaPlayer()
 		{
 			_retriever = new MediaMetadataRetriever();
-			_retriever.SetDataSource("http://fs-east.theblast.fast-serv.com:80/blast56ogg.opus");
+			_retriever.SetDataSource("http://listen.christianhardrock.net/stream/3/", new Dictionary<string, string>());
+			base.TimedText += MediaPlayer_TimedText;
+			base.Info += MediaPlayer_Info;
+			base.TimedMetaDataAvailable += MediaPlayer_TimedMetaDataAvailable1;
+		}
+
+		private void MediaPlayer_TimedMetaDataAvailable1(object sender, TimedMetaDataAvailableEventArgs e)
+		{
+		}
+
+		private void MediaPlayer_Info(object sender, InfoEventArgs e)
+		{
+		}
+
+		private void MediaPlayer_TimedText(object sender, TimedTextEventArgs e)
+		{
 		}
 
 		public string GetMetadata()
@@ -33,6 +48,8 @@ namespace PaJaMaPlayer.Droid
 					rtv += "_" + val;
 			}
 			return rtv;
+			//var inf = base.GetTrackInfo();
+			//return "TEST";
 		}
 
 		private void MediaPlayer_TimedMetaDataAvailable(object sender, TimedMetaDataAvailableEventArgs e)

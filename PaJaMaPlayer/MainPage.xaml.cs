@@ -48,7 +48,7 @@ namespace PaJaMaPlayer
 			}
 
 			Equalizer.Instance.SetEnabled(true);
-			MediaPlayer.Instance.SetDataSource("http://fs-east.theblast.fast-serv.com:80/blast64");
+			MediaPlayer.Instance.SetDataSource("http://listen.christianhardrock.net/stream/3//;stream.mp3");
 			MediaPlayer.Instance.PrepareAsync();
 			MediaPlayer.Instance.Prepared += (sender, args) =>
 			{

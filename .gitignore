@@ -4,3 +4,6 @@ PaJaMaPlayer.Shared/bin
 PaJaMaPlayer.Shared/obj
 PaJaMaPlayer/bin
 PaJaMaPlayer/obj
+.vs
+**/*.user
+PaJaMaPlayer.Android/PaJaMaPlayer.Android.csproj.user
