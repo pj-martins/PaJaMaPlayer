@@ -5,5 +5,5 @@ PaJaMaPlayer.Shared/obj
 PaJaMaPlayer/bin
 PaJaMaPlayer/obj
 .vs
-**/*.user
+*.user
 PaJaMaPlayer.Android/PaJaMaPlayer.Android.csproj.user

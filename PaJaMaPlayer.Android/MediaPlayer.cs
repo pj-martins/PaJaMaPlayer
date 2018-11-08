@@ -19,23 +19,8 @@ namespace PaJaMaPlayer.Droid
 		private MediaMetadataRetriever _retriever;
 		public MediaPlayer()
 		{
-			_retriever = new MediaMetadataRetriever();
-			_retriever.SetDataSource("http://listen.christianhardrock.net/stream/3/", new Dictionary<string, string>());
-			base.TimedText += MediaPlayer_TimedText;
-			base.Info += MediaPlayer_Info;
-			base.TimedMetaDataAvailable += MediaPlayer_TimedMetaDataAvailable1;
-		}
-
-		private void MediaPlayer_TimedMetaDataAvailable1(object sender, TimedMetaDataAvailableEventArgs e)
-		{
-		}
-
-		private void MediaPlayer_Info(object sender, InfoEventArgs e)
-		{
-		}
-
-		private void MediaPlayer_TimedText(object sender, TimedTextEventArgs e)
-		{
+			//_retriever = new MediaMetadataRetriever();
+			//_retriever.SetDataSource("http://listen.christianhardrock.net/stream/3/", new Dictionary<string, string>());
 		}
 
 		public string GetMetadata()

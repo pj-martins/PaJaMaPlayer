@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<NavigationPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PaJaMaPlayer"
              x:Class="PaJaMaPlayer.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-		<!--<Button Clicked="Button_Clicked" Text="Bump Frequency"></Button>-->
-		<StackLayout x:Name="layoutPlaylists"></StackLayout>
-		<StackLayout x:Name="layoutEqualizer"></StackLayout>
-	</StackLayout>
-
-</ContentPage>
+	<NavigationPage.ToolbarItems>
+		<ToolbarItem Text="TEST" />
+	</NavigationPage.ToolbarItems>
+</NavigationPage>

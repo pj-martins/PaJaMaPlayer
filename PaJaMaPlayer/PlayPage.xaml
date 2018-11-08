@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:c="clr-namespace:PaJaMaPlayer"
+             x:Class="PaJaMaPlayer.PlayPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label x:Name="lblName"></Label>
+			<Label x:Name="lblTrack"></Label>
+			<StackLayout x:Name="layoutPlaylists"></StackLayout>
+			<StackLayout x:Name="layoutEqualizer"></StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
