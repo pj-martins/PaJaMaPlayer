@@ -173,8 +173,7 @@ namespace PaJaMaPlayer
 		public LivestreamReceiver Receiver { get; private set; }
 		public Dictionary<string, string> Metadata { get; private set; }
 
-		public string CurrentArtist { get { return Metadata["StreamTitle"].Split(new[] { " - " }, StringSplitOptions.RemoveEmptyEntries).First(); } }
-		public string CurrentTitle { get { return Metadata["StreamTitle"].Substring(CurrentArtist.Length + 3); } }
+		public string CurrentTitle { get { return Metadata["StreamTitle"]; } }
 
 		internal LivestreamMetadataEventArgs(LivestreamReceiver receiver, Dictionary<string, string> metadata)
 		{

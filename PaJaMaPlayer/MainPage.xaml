@@ -3,7 +3,4 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PaJaMaPlayer"
              x:Class="PaJaMaPlayer.MainPage">
-	<NavigationPage.ToolbarItems>
-		<ToolbarItem Text="TEST" />
-	</NavigationPage.ToolbarItems>
 </NavigationPage>

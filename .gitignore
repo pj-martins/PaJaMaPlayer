@@ -7,3 +7,5 @@ PaJaMaPlayer/obj
 .vs
 *.user
 PaJaMaPlayer.Android/PaJaMaPlayer.Android.csproj.user
+PaJaMaPlayer.Android/PaJaMaPlayer.Android.csproj.user
+**/*.user

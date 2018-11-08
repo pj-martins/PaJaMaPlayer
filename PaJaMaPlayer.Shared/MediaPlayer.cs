@@ -12,9 +12,10 @@ namespace PaJaMaPlayer.Shared
 	public interface IMediaPlayer
 	{
 		void SetDataSource(string url);
-		string GetMetadata();
 		void PrepareAsync();
 		void Start();
+		void Stop();
+		void Reset();
 		event EventHandler Prepared;
 	}
 }

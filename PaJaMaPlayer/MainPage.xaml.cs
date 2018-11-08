@@ -15,17 +15,8 @@ namespace PaJaMaPlayer
 		{
 			InitializeComponent();
 
-			var props = Application.Current.Properties;
-			if (props.ContainsKey("CurrentList"))
-			{
-				try
-				{
-
-				}
-				catch { }
-			}
-
-			Navigation.PushAsync(new PaJaMaPage(new PlayPage()));
+			Navigation.PushAsync(new PaJaMaPage(new PlaylistPage()));
 		}
+
 	}
 }
